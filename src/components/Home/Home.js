@@ -121,7 +121,7 @@ function Home() {
       </div>
       <div className="search_type">
         <div className="search_type_inner">
-          <img src={family_img} height="100px"></img>
+          <img src={family_img} height="100px" alt="img"></img>
           <div className="stype_name">
             <span>category</span>
             {arrow}

@@ -16,7 +16,6 @@ import kids_img from "../../assets/images/kids.jpg";
 
 function Home() {
   const product = [...product_list].sort(() => Math.random() - 0.5);
-  console.log(product);
   const arrow = (
     <svg
       className="arrow"
@@ -34,7 +33,7 @@ function Home() {
     const word = event.target.value;
     updateinp(word);
     const newfilter = product.filter((e, i) => {
-      return e.product_name.toLowerCase().includes(word);
+      return e.product_name.toLowerCase().includes(word.toLowerCase());
     });
     if (word === "") {
       updateddata(product_list);
